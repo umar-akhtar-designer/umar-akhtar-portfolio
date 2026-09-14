@@ -106,13 +106,56 @@ if (parallax) {
   }, { passive: true });
 }
 
-/* ---------- Experience accordion: close others ---------- */
-document.querySelectorAll('.exp-row').forEach((row) => {
-  row.addEventListener('toggle', () => {
+/* ---------- Experience accordion: smooth open/close ---------- */
+const expRows = document.querySelectorAll('.exp-row');
+
+function expParts(row) {
+  return { summary: row.querySelector('summary'), details: row.querySelector('.exp-details') };
+}
+
+function expClose(row) {
+  const { details } = expParts(row);
+  if (!row.open || !details || row.dataset.animating === '1') return;
+  row.dataset.animating = '1';
+  details.style.height = details.scrollHeight + 'px';
+  void details.offsetHeight;
+  details.style.height = '0px';
+  details.addEventListener('transitionend', function onEnd(ev) {
+    if (ev.propertyName !== 'height') return;
+    details.removeEventListener('transitionend', onEnd);
+    row.open = false;
+    details.style.height = '';
+    row.dataset.animating = '0';
+  });
+}
+
+function expOpen(row) {
+  const { details } = expParts(row);
+  if (row.open || !details || row.dataset.animating === '1') return;
+  row.dataset.animating = '1';
+  row.open = true;
+  const target = details.scrollHeight;
+  details.style.height = '0px';
+  void details.offsetHeight;
+  details.style.height = target + 'px';
+  details.addEventListener('transitionend', function onEnd(ev) {
+    if (ev.propertyName !== 'height') return;
+    details.removeEventListener('transitionend', onEnd);
+    details.style.height = '';
+    row.dataset.animating = '0';
+  });
+}
+
+expRows.forEach((row) => {
+  const { summary } = expParts(row);
+  if (!summary) return;
+  summary.addEventListener('click', (e) => {
+    e.preventDefault();
     if (row.open) {
-      document.querySelectorAll('.exp-row[open]').forEach((other) => {
-        if (other !== row) other.open = false;
-      });
+      expClose(row);
+    } else {
+      expRows.forEach((other) => { if (other !== row) expClose(other); });
+      expOpen(row);
     }
   });
 });

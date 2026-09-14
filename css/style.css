@@ -835,6 +835,20 @@ h2.sec-title {
 }
 .cert-item .cert-arrow svg { width: 11px; height: 11px; stroke: currentColor; }
 .cert-item:hover .cert-arrow { background: var(--blue); color: #fff; }
+.cred-line .cert-arrow {
+  align-self: center;
+  width: 26px; height: 26px;
+  border-radius: 50%;
+  background: var(--surface);
+  border: 1px solid var(--line-strong);
+  display: flex; align-items: center; justify-content: center;
+  color: var(--blue);
+  transition: background .25s ease, color .25s ease;
+  flex-shrink: 0;
+}
+.cred-line .cert-arrow svg { width: 11px; height: 11px; stroke: currentColor; }
+.cred-line .cert-arrow:hover { background: var(--blue); color: #fff; }
+.cred-line > div { flex: 1; min-width: 0; }
 .cert-group-title {
   grid-column: 1 / -1;
   display: flex;
@@ -905,9 +919,11 @@ h2.sec-title {
 .exp-arrow svg { width: 16px; height: 16px; }
 .exp-row[open] .exp-arrow { transform: rotate(45deg); background: var(--ink); color: #fff; }
 .exp-details {
-  padding: 0 8px 30px 80px;
+  padding: 0 8px 0 80px;
+  overflow: hidden;
+  transition: height .38s var(--ease);
 }
-.exp-details ul { display: flex; flex-direction: column; gap: 8px; }
+.exp-details ul { display: flex; flex-direction: column; gap: 8px; padding-bottom: 30px; }
 .exp-details li { font-size: 14.5px; color: var(--muted); position: relative; padding-left: 22px; }
 .exp-details li::before {
   content: '';
@@ -949,30 +965,6 @@ h2.sec-title {
   color: #fff;
   margin-top: 5px;
 }
-.leet-tile {
-  grid-column: 1 / -1;
-  background: linear-gradient(135deg, #eaf3fb, #fdf6ec);
-  border: 1px solid var(--line);
-  border-radius: 18px;
-  padding: 26px 30px;
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  box-shadow: 8px 10px 0 rgba(185,220,245,.5);
-}
-.leet-tile .emblem {
-  width: 54px; height: 54px;
-  border-radius: 14px;
-  background: var(--ink);
-  color: #f2a33c;
-  display: flex; align-items: center; justify-content: center;
-  font-family: var(--serif);
-  font-size: 26px;
-  font-style: italic;
-}
-.leet-tile b { font-size: 17px; color: var(--ink); }
-.leet-tile p { font-size: 14px; color: var(--muted); }
-.leet-tile a { margin-left: auto; }
 
 /* ---------- Contact ---------- */
 .contact-section {
@@ -1090,8 +1082,6 @@ h2.sec-title {
   .cert-list { grid-template-columns: 1fr; }
   .cred-grid { grid-template-columns: 1fr; }
   .exp-details { padding: 0 8px 28px 0; }
-  .leet-tile { flex-direction: column; align-items: flex-start; text-align: left; }
-  .leet-tile a { margin-left: 0; margin-top: 8px; }
   .footer-inner { flex-direction: column; text-align: center; }
 }
 
