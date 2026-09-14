@@ -3,6 +3,11 @@
    Light editorial "paper" theme · LinkedIn blue accent · 3D depth
    ============================================================ */
 
+/* Hide Netlify's injected "Powered by Netlify" badge iframe */
+iframe[id*="nl-badge"], iframe[id*="netlify"] {
+  display: none !important;
+}
+
 :root {
   --ink: #16222e;
   --muted: #5a6775;
