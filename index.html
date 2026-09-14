@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <title>Umar Akhtar — AI/ML Engineer, Full-Stack Developer &amp; Creative Designer</title>
+ <meta name="description" content="Umar Akhtar — AI/ML Engineer, Full-Stack Web Developer, UI/UX and Graphic Designer from Faisalabad, Pakistan. Building intelligent products with clean engineering and striking design." />
+ <meta name="keywords" content="Umar Akhtar, AI ML Engineer, Full Stack Developer, UI UX Designer, Graphic Designer, Portfolio, Faisalabad, Harvard Leadership" />
+ <meta name="author" content="Umar Akhtar" />
+ <meta property="og:type" content="website" />
+ <meta property="og:title" content="Umar Akhtar | AI/ML Engineer &amp; Creative Designer" />
+ <meta property="og:description" content="AI/ML, Full-Stack Development, UI/UX and Graphic Design portfolio." />
+
+ <link rel="preconnect" href="https://fonts.googleapis.com" />
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+ <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+ <link rel="stylesheet" href="css/style.css" />
+ <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+</head>
+<body>
+
+ <div class="scroll-progress" id="scrollProgress"></div>
+
+ <!-- ================= NAVBAR ================= -->
+ <nav class="nav" id="nav">
+  <div class="container nav-inner">
+   <a href="#top" class="brand">
+    <span class="brand-mark">UA<i class="mark-dot d1"></i><i class="mark-dot d2"></i></span>
+   </a>
+   <div class="nav-links" id="navLinks">
+    <a href="#about">About</a>
+    <a href="#projects" class="active">AI/ML</a>
+    <a href="web.html">Web</a>
+    <a href="graphic.html">Graphic</a>
+    <a href="certificates.html">Certificates</a>
+    <a href="#contact">Contact</a>
+   </div>
+   <a href="#contact" class="nav-cta btn btn-primary">Hire Me</a>
+   <button class="nav-toggle" id="navToggle" aria-label="Menu">
+    <span></span><span></span><span></span>
+   </button>
+  </div>
+ </nav>
+
+ <!-- ================= HERO ================= -->
+ <header class="hero" id="top">
+  <div class="hero-blobs" aria-hidden="true"><span class="blob-1"></span><span class="blob-2"></span><span class="blob-3"></span></div>
+  <div class="container hero-inner">
+   <div>
+    <span class="hero-badge">
+     <span class="status-dot"></span>
+     AI/ML Engineer · Faisalabad, Pakistan
+     <span class="award-pill"><svg style="width:13px;height:13px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2z"/></svg> AMD Hackathon 2026</span>
+    </span>
+    <h1>
+     <span class="line"><span>I turn ideas into</span></span>
+     <span class="line"><span>intelligent products</span></span>
+     <span class="line"><span><span class="grad-text">that actually work.</span></span></span>
+    </h1>
+    <p class="hero-sub">
+     <b>AI/ML engineer, full-stack developer &amp; creative designer.</b> I build multimodal
+     AI, web platforms and digital brands — blending intelligence, clean engineering and
+     striking design.
+    </p>
+    <div class="hero-cta">
+     <a href="#projects" class="btn btn-primary">
+      Explore my work
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10M7 17 17 7"/></svg>
+     </a>
+     <a href="#contact" class="btn btn-ghost">Start a conversation</a>
+    </div>
+    <div class="hero-stats" style="display:flex;flex-wrap:wrap;gap:12px 32px;">
+     <div class="stat" style="font-family:var(--serif);font-style:italic;font-size:24px;"><b>20+</b>&nbsp;<span style="font-family:var(--sans);font-style:normal;font-size:12.5px;color:var(--muted);">Projects</span></div>
+     <div class="stat" style="font-family:var(--serif);font-style:italic;font-size:24px;"><b>50+</b>&nbsp;<span style="font-family:var(--sans);font-style:normal;font-size:12.5px;color:var(--muted);">Clients</span></div>
+     <div class="stat" style="font-family:var(--serif);font-style:italic;font-size:24px;"><b>15+</b>&nbsp;<span style="font-family:var(--sans);font-style:normal;font-size:12.5px;color:var(--muted);">Certificates</span></div>
+    </div>
+   </div>
+
+   <div class="hero-visual">
+    <div class="photo-frame">
+     <img class="parallax" src="assets/profile.jpg" alt="Umar Akhtar" data-parallax onerror="this.style.display='none'" />
+     <div class="photo-caption">Umar Akhtar / Faisalabad</div>
+    </div>
+    <div class="float-chip chip-tl">
+     <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M15 2v2M15 20v2M2 15h2M2 9h2M20 15h2M20 9h2M9 2v2M9 20v2"/></svg></span>
+     <div><b>AI &amp; ML</b><span>Core focus</span></div>
+    </div>
+    <div class="float-chip chip-br">
+     <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22a10 10 0 1 1 10-10c0 1.5-1 2-2 2h-2c-1.2 0-2 .8-2 2 0 .9.6 1.5 1.5 1.5H18c1.4 0 3.5 1 3.5 3.5S16 22 12 22z"/><circle cx="7.5" cy="11.5" r="1"/><circle cx="11" cy="7.5" r="1"/><circle cx="16" cy="8.5" r="1"/></svg></span>
+     <div><b>Design &amp; Code</b><span>Creative full-stack</span></div>
+    </div>
+   </div>
+  </div>
+ </header>
+
+ <!-- ================= PROOF BAR ================= -->
+ <div class="proof">
+  <div class="shell proof-grid">
+   <div class="proof-item"><div class="num" data-count="20" data-suffix="+">0</div><div class="lbl">Projects delivered</div></div>
+   <div class="proof-item"><div class="num" data-count="50" data-suffix="+">0</div><div class="lbl">Happy clients</div></div>
+   <div class="proof-item"><div class="num" data-count="15" data-suffix="+">0</div><div class="lbl">Achievements</div></div>
+   <div class="proof-item"><div class="num" data-count="4.8" data-suffix="★">0</div><div class="lbl">Client rating</div></div>
+  </div>
+ </div>
+
+ <!-- ================= ABOUT ================= -->
+ <section class="section" id="about">
+  <div class="shell">
+   <div class="sec-head">
+    <span class="eyebrow">What I do</span>
+    <h2 class="sec-title">Engineering with an <span class="grad-text">AI point of view.</span></h2>
+    <p class="sec-lead">I'm Umar Akhtar from Faisalabad, Pakistan — founder of the digital agency WeblyPro, where I blend machine learning, full-stack development and design into products people actually use.</p>
+   </div>
+   <div class="cap-grid">
+    <div class="cap-card reveal">
+     <span class="idx">01</span>
+     <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M15 2v2M15 20v2M2 15h2M2 9h2M20 15h2M20 9h2M9 2v2M9 20v2"/></svg></span>
+     <h3>Applied AI / ML</h3>
+     <p>Multimodal models, computer vision, LLMs, AI agents and automation built to solve real problems.</p>
+     <div class="stack">Python · NumPy · Pandas · Fireworks AI · LLMs</div>
+    </div>
+    <div class="cap-card reveal">
+     <span class="idx">02</span>
+     <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m16 18 6-6-6-6M8 6l-6 6 6 6"/></svg></span>
+     <h3>Full-Stack Engineering</h3>
+     <p>Fast, responsive web platforms — e-commerce, corporate and marketing sites that convert.</p>
+     <div class="stack">React · Next.js · Node.js · Shopify · Tailwind</div>
+    </div>
+    <div class="cap-card reveal">
+     <span class="idx">03</span>
+     <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 2 10 6-10 6L2 8z"/><path d="m2 12 10 6 10-6"/><path d="m2 16 10 6 10-6"/></svg></span>
+     <h3>UI/UX &amp; Creative</h3>
+     <p>Pixel-perfect interfaces, brand identities, graphics and AI-driven video content.</p>
+     <div class="stack">Figma · Photoshop · Illustrator · Video &amp; AI Video</div>
+    </div>
+   </div>
+  </div>
+ </section>
+
+ <!-- ================= AI/ML PROJECTS ================= -->
+ <section class="section section-alt" id="projects">
+  <div class="shell">
+   <div class="sec-head">
+    <span class="eyebrow">Featured work · AI/ML</span>
+    <h2 class="sec-title">Intelligence that <span class="grad-text">does the thinking.</span></h2>
+    <p class="sec-lead">My AI/ML projects — models, agents and intelligent applications. More are in production and will be showcased here as they launch.</p>
+   </div>
+
+   <div class="projects-grid">
+
+    <article class="project-card reveal">
+     <div class="project-screenshot-wrapper">
+      <img class="project-screenshot" src="https://res.cloudinary.com/dxx12rebk/image/upload/v1789370815/edusense_ai.png" alt="EduSense AI project screenshot" loading="lazy" />
+      <span class="project-tag">AI / ML · Hackathon</span>
+     </div>
+     <div class="project-body">
+      <div class="roles">Next.js · TypeScript · Fireworks AI · Multimodal</div>
+      <h3>EduSense AI — Emotional Learning Assistant</h3>
+      <p>Multimodal AI that analyzes classroom videos of children to detect emotions, behaviour risks and give personalized recommendations for parents &amp; teachers. Created during the AMD Developer Hackathon 2026.</p>
+      <div class="project-metrics">
+       <div><b>13</b><span>Emotions detected</span></div>
+       <div><b>4</b><span>Caption styles</span></div>
+       <div><b>PDF</b><span>Auto reports</span></div>
+      </div>
+      <div class="project-links">
+       <a class="btn-link" href="https://edusense-ai-one.vercel.app" target="_blank" rel="noopener">Live app <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10M7 17 17 7"/></svg></a>
+      </div>
+     </div>
+    </article>
+
+    <article class="project-card reveal">
+     <div class="project-screenshot-wrapper">
+      <img class="project-screenshot" src="https://res.cloudinary.com/dxx12rebk/image/upload/v1789370816/engineering_ai.png" alt="Engineering Studio AI project screenshot" loading="lazy" />
+      <span class="project-tag">AI / ML · Hackathon</span>
+     </div>
+     <div class="project-body">
+      <div class="roles">AI Studio · Hackathon · Full Stack</div>
+      <h3>Engineering Studio AI</h3>
+      <p>AI-powered engineering lab assistant built during a global hackathon — spans multimodal understanding, generation and automation.</p>
+      <div class="project-metrics">
+       <div><b>AI</b><span>Studio</span></div>
+       <div><b>Global</b><span>Hackathon</span></div>
+       <div><b>Live</b><span>on Render</span></div>
+      </div>
+      <div class="project-links">
+       <a class="btn-link" href="https://engineering-studio-ai.onrender.com" target="_blank" rel="noopener">Live app <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10M7 17 17 7"/></svg></a>
+       <a class="btn-link" href="https://github.com/psi16181918161phi/engineering-studio-ai" target="_blank" rel="noopener">GitHub <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10M7 17 17 7"/></svg></a>
+      </div>
+     </div>
+    </article>
+
+    <article class="project-card reveal">
+     <div class="browser-vis dark">
+      <div class="browser-bar"><i></i><i></i><i></i><span>ai · in production</span></div>
+      <div class="page-skeleton"><i></i><i></i><i></i><i></i><i></i></div>
+      <span class="project-tag live">AI / ML</span>
+      <span class="watermark-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg></span>
+     </div>
+     <div class="project-body">
+      <div class="roles">Upcoming</div>
+      <h3>New AI/ML Projects</h3>
+      <p>I'm currently building the next generation of AI/ML projects — models, agents and intelligent applications. They'll be showcased here as they launch.</p>
+      <div class="project-metrics">
+       <div><b>Soon</b><span>In production</span></div>
+       <div><b>LLM</b><span>Agents</span></div>
+       <div><b>CV</b><span>Vision</span></div>
+      </div>
+     </div>
+    </article>
+
+   </div>
+  </div>
+ </section>
+
+ <!-- ================= MORE WORK (other disciplines) ================= -->
+ <section class="section" id="more-work">
+  <div class="shell">
+   <div class="sec-head center">
+    <span class="eyebrow">More work</span>
+    <h2 class="sec-title">Explore my <span class="grad-text">other disciplines.</span></h2>
+    <p class="sec-lead">Web development and graphic design — each with its own dedicated page.</p>
+   </div>
+   <div class="cap-grid">
+    <a class="cap-card reveal" href="web.html" style="display:block;text-decoration:none;">
+     <span class="idx">WEB</span>
+     <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m16 18 6-6-6-6M8 6l-6 6 6 6"/></svg></span>
+     <h3 style="font-family:var(--serif);font-size:26px;font-weight:400;">Web Development</h3>
+     <p>E-commerce, corporate, SaaS and travel platforms — including UI/UX work for Softnixt and Crelix.</p>
+     <div class="stack">View projects →</div>
+    </a>
+    <a class="cap-card reveal" href="graphic.html" style="display:block;text-decoration:none;">
+     <span class="idx">GFX</span>
+     <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22a10 10 0 1 1 10-10c0 1.5-1 2-2 2h-2c-1.2 0-2 .8-2 2 0 .9.6 1.5 1.5 1.5H18c1.4 0 3.5 1 3.5 3.5S16 22 12 22z"/><circle cx="7.5" cy="11.5" r="1"/><circle cx="11" cy="7.5" r="1"/><circle cx="16" cy="8.5" r="1"/></svg></span>
+     <h3 style="font-family:var(--serif);font-size:26px;font-weight:400;">Graphic Design</h3>
+     <p>Brand identities, social creatives and AI-driven visual content.</p>
+     <div class="stack">View projects →</div>
+    </a>
+   </div>
+  </div>
+ </section>
+
+ <!-- ================= RECOGNITION ================= -->
+ <section class="section" id="recognition">
+  <div class="shell">
+   <div class="sec-head">
+    <span class="eyebrow">Recognition</span>
+    <h2 class="sec-title">Results that <span class="grad-text">travel beyond the repo.</span></h2>
+   </div>
+   <div class="rec-grid">
+    <div class="rec-cell reveal">
+     <span class="trophy"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2z"/></svg></span>
+     <div class="org">AMD · Hackathon Participant</div>
+     <h3>AMD Developer Hackathon — ACT II</h3>
+     <span class="date">Track 2: Video Captioning + Multimodal Video Understanding · 2026</span>
+    </div>
+    <div class="rec-cell reveal">
+     <span class="trophy"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.5 13 17 22l-5-3-5 3 1.5-9"/></svg></span>
+     <div class="org">AI Factory · Certificate</div>
+     <h3>Artificial Intelligence Training</h3>
+     <span class="date">AutoGen · BabyAGI · Claude Code · 2026</span>
+    </div>
+    <div class="rec-cell reveal">
+     <span class="trophy"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6"/><path d="M12 2 2 7l10 5 10-5-10-5z"/><path d="M6 12v7c0 1.7 2.7 3 6 3s6-1.3 6-3v-7"/></svg></span>
+     <div class="org">Harvard · Program</div>
+     <h3>Harvard Leadership Program</h3>
+     <span class="date">Currently enrolled · In progress</span>
+    </div>
+    <div class="rec-cell reveal">
+     <span class="trophy"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></span>
+     <div class="org">Professional · Offer</div>
+     <h3>UI/UX Designer — Professional Role</h3>
+     <span class="date">Appointed as UI/UX Designer</span>
+    </div>
+</div>
+
+   <div class="hero-cta" style="justify-content:center; margin-top:40px;">
+    <a class="btn btn-primary" href="certificates.html">
+     View all certificates
+     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10M7 17 17 7"/></svg>
+    </a>
+   </div>
+  </div>
+ </section>
+
+ <!-- ================= EXPERIENCE ================= -->
+ <section class="section section-alt" id="experience">
+  <div class="shell">
+   <div class="sec-head center">
+    <span class="eyebrow">Experience</span>
+    <h2 class="sec-title">From production software <span class="grad-text">to research labs.</span></h2>
+   </div>
+   <div class="experience">
+    <details class="exp-row reveal" open>
+     <summary>
+      <span class="exp-logo"><img src="https://favicon.im/weblypro.site" alt="WeblyPro logo" loading="lazy" /></span>
+      <div class="exp-main">
+       <span class="when">Founder · Since 2023</span>
+       <h3>WeblyPro</h3>
+       <div class="role">Digital Growth Agency</div>
+      </div>
+      <span class="exp-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+     </summary>
+     <div class="exp-details">
+      <ul>
+       <li>Leading a full-service agency — web development, Shopify, UI/UX, graphic design, video &amp; AI services.</li>
+       <li>Delivered 20+ client projects including e-commerce, travel, study-abroad and corporate sites.</li>
+       <li>Growing the AI services line — AI agents, automation, AI photo &amp; video creatives.</li>
+      </ul>
+     </div>
+    </details>
+
+    <details class="exp-row reveal">
+     <summary>
+      <span class="exp-logo"><img src="https://favicon.im/freelancer.com" alt="Freelancer.com logo" loading="lazy" /></span>
+      <div class="exp-main">
+       <span class="when">Jul 2023 · Present</span>
+       <h3>Freelancer.com</h3>
+       <div class="role">Freelance Web Developer &amp; Graphic Designer · Remote</div>
+      </div>
+      <span class="exp-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+     </summary>
+     <div class="exp-details">
+      <ul>
+       <li>Co-founded WeblyPro and delivered digital solutions to clients as a developer and designer.</li>
+       <li>Built responsive websites using React.js and Node.js.</li>
+       <li>Designed logos, business cards, brochures and social media creatives — complete branding solutions.</li>
+       <li>Worked on eCommerce and AI-based projects.</li>
+      </ul>
+     </div>
+    </details>
+
+    <details class="exp-row reveal">
+     <summary>
+      <span class="exp-logo"><img src="https://favicon.im/icodeguru.com" alt="iCodeGuru logo" loading="lazy" /></span>
+      <div class="exp-main">
+       <span class="when">Jul 2026 · Present</span>
+       <h3>iCodeGuru</h3>
+       <div class="role">Member · Community Learning</div>
+      </div>
+      <span class="exp-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+     </summary>
+     <div class="exp-details">
+      <ul>
+       <li>Active member focused on continuous learning — currently strengthening Python and exploring AI.</li>
+       <li>Planned path into Machine Learning, Data Structures &amp; Algorithms and problem-solving.</li>
+       <li>Participating in learning sessions, technical programs and community-driven opportunities.</li>
+      </ul>
+     </div>
+    </details>
+
+    <details class="exp-row reveal">
+     <summary>
+      <span class="exp-logo"><img src="https://favicon.im/softnixt.com" alt="SOFTNIXT SOLUTIONS logo" loading="lazy" /></span>
+      <div class="exp-main">
+       <span class="when">Feb 2026 · Aug 2026</span>
+       <h3>SOFTNIXT SOLUTIONS</h3>
+       <div class="role">UI/UX &amp; Graphic Designer · On-site</div>
+      </div>
+      <span class="exp-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+     </summary>
+     <div class="exp-details">
+      <ul>
+       <li>Designed clean, modern and user-friendly UI layouts for websites and applications.</li>
+       <li>Created social media creatives, banners and marketing materials.</li>
+       <li>Improved user experience through responsive design and collaborated with developers to implement it.</li>
+      </ul>
+     </div>
+    </details>
+
+    <details class="exp-row reveal">
+     <summary>
+      <span class="exp-logo"><img src="https://favicon.im/futurecareerhub.org.uk" alt="Future Career Hub logo" loading="lazy" /></span>
+      <div class="exp-main">
+       <span class="when">May 2024 · Dec 2025</span>
+       <h3>Future Career Hub</h3>
+       <div class="role">Graphic Designer</div>
+      </div>
+      <span class="exp-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+     </summary>
+     <div class="exp-details">
+      <ul>
+       <li>Handled all social media creatives and brand visuals for the whole company.</li>
+       <li>Designed thumbnails, posters, banners and ad creatives that lifted engagement.</li>
+      </ul>
+     </div>
+    </details>
+
+    <details class="exp-row reveal">
+     <summary>
+      <span class="exp-logo">A</span>
+      <div class="exp-main">
+       <span class="when">Previously</span>
+       <h3>Abroad Mentors</h3>
+       <div class="role">Graphic Designer</div>
+      </div>
+      <span class="exp-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+     </summary>
+     <div class="exp-details">
+      <ul>
+       <li>Delivered consistent visual identity across campaigns for study &amp; immigration audiences.</li>
+       <li>Created marketing assets that converted leads into booked consultations.</li>
+      </ul>
+     </div>
+    </details>
+
+    <details class="exp-row reveal">
+     <summary>
+      <span class="exp-logo">E</span>
+      <div class="exp-main">
+       <span class="when">2026</span>
+       <h3>EduSense AI — AMD Hackathon</h3>
+       <div class="role">AI/ML Engineer</div>
+      </div>
+      <span class="exp-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+     </summary>
+     <div class="exp-details">
+      <ul>
+       <li>Built a multimodal video-understanding assistant with Fireworks AI (Qwen3 Omni).</li>
+       <li>Implemented emotion analysis, styled captions, PDF reports and progress dashboards.</li>
+       <li>Hackathon entry for the AMD Developer Hackathon 2026 — Track 2.</li>
+      </ul>
+     </div>
+    </details>
+
+    <details class="exp-row reveal">
+     <summary>
+      <span class="exp-logo">*</span>
+      <div class="exp-main">
+       <span class="when">Ongoing</span>
+       <h3>Independent Projects</h3>
+       <div class="role">Multidisciplinary</div>
+      </div>
+      <span class="exp-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+     </summary>
+     <div class="exp-details">
+      <ul>
+       <li>Freelance web development, graphic design and video editing for international clients.</li>
+       <li>Deepening AI/ML skills — Python, NumPy, Pandas, LLMs and AI automation.</li>
+      </ul>
+     </div>
+    </details>
+   </div>
+  </div>
+ </section>
+
+ <!-- ================= CREDENTIALS ================= -->
+ <section class="section" id="credentials">
+  <div class="shell">
+   <div class="sec-head">
+    <span class="eyebrow">Learning &amp; teaching</span>
+    <h2 class="sec-title">Learning in public. <span class="grad-text">Teaching along the way.</span></h2>
+   </div>
+   <div class="cred-grid">
+    <div class="cred-panel reveal">
+     <h3>Education &amp; Programs</h3>
+     <div class="cred-line">
+      <span class="ic"><svg viewBox="0 0 24 24"><path d="M12 2 3 5.6V15c0 4.6 3.8 7.6 9 10 5.2-2.4 9-5.4 9-10V5.6L12 2z" fill="#A51C30" stroke="none"/><path d="M12 11.4c-1.3-1.6-3.3-2.5-5.4-2.5V17.6c2.1 0 4.1.9 5.4 2.5 1.3-1.6 3.3-2.5 5.4-2.5V8.9c-2.1 0-4.1.9-5.4 2.5z" fill="#fff" stroke="none"/><path d="M8.9 11.4h6.2V13.2H8.9z" fill="#fff" stroke="none"/></svg></span>
+      <div><b>Harvard Leadership Program</b><span>Leadership training · enrolled, in progress</span></div>
+     </div>
+     <div class="cred-line">
+      <span class="ic"><svg viewBox="0 0 24 24"><rect x="0.5" y="0.5" width="23" height="23" rx="4.5" fill="#8C1515" stroke="none"/><text x="12" y="17.7" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14.5" font-weight="700" fill="#fff" stroke="none">S</text></svg></span>
+      <div><b>Stanford Online Courses</b><span>Teaching role · upcoming, in sha Allah</span><span class="tag-mini">Upcoming</span></div>
+     </div>
+     <div class="cred-line">
+      <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 8 5 4 5-4"/><path d="M4 17h16"/><path d="M4 21h16"/></svg></span>
+      <div><b>Continuous AI/ML Learning</b><span>Python, NumPy, Pandas, LLMs, agents &amp; automation</span></div>
+     </div>
+    </div>
+    <div class="cred-panel reveal">
+     <h3>Community &amp; Presence</h3>
+     <div class="cred-line">
+      <span class="ic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 2h-17A1.5 1.5 0 0 0 2 3.5v17A1.5 1.5 0 0 0 3.5 22h17a1.5 1.5 0 0 0 1.5-1.5v-17A1.5 1.5 0 0 0 20.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 1 1 8.3 6.5a1.78 1.78 0 0 1-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0 0 12.5 14v1.14H14V19h-3v-9h3v1.18c.43-.7 1.24-1.38 2.58-1.38 1.86 0 3.42 1.32 3.42 3.97z"/></svg></span>
+      <div><b>LinkedIn</b><span>Let's connect — AI/ML, development &amp; design</span><a class="btn-link" style="font-size:12px;" href="https://www.linkedin.com/in/umar-akhtar-designer/" target="_blank" rel="noopener">umar-akhtar-designer <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10M7 17 17 7"/></svg></a></div>
+     </div>
+     <div class="cred-line">
+      <span class="ic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.6.5.5 5.6.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.1.1 1.7 1.1 1.7 1.1 1 1.7 2.6 1.2 3.3.9.1-.7.4-1.2.7-1.5-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0C18 4.3 19 4.6 19 4.6c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.2c0 .3.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.6 18.4.5 12 .5z"/></svg></span>
+      <div><b>GitHub</b><span>Code, experiments &amp; AI builds</span><a class="btn-link" style="font-size:12px;" href="https://github.com/umar-akhtar-designer" target="_blank" rel="noopener">github.com/umar-akhtar-designer <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10M7 17 17 7"/></svg></a></div>
+     </div>
+     <div class="cred-line">
+      <span class="ic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.48 3.3 21 13.02c.28.4 0 1.1-.58 1.1H15l1.66 6.06c.22.82-.59 1.2-1.1.5L7.5 10.86c-.25-.38 0-.86.58-.86h6.54L12.96 3.7c-.2-.78.34-1.32.52-.4" opacity=".05"/><path d="M13.48 3.3 21 13.02c.28.4 0 1.1-.58 1.1H15l1.66 6.06c.22.82-.66 1.2-1.1.5L7.5 10.86c-.25-.38 0-.86.58-.86h6.54L12.96 3.7c-.2-.78.34-1.32.52-.4Z"/></svg></span>
+      <div><b>LeetCode</b><span>Problem solving &amp; DSA practice</span><a class="btn-link" style="font-size:12px;" href="https://leetcode.com/u/umarakhtar222/" target="_blank" rel="noopener">leetcode.com/u/umarakhtar222 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10M7 17 17 7"/></svg></a></div>
+     </div>
+    </div>
+
+    <div class="leet-tile reveal">
+     <span class="emblem">L</span>
+     <div>
+      <b>Sharpening problem-solving daily</b>
+      <p>Solving data structures &amp; algorithms on LeetCode to keep the engineering fundamentals sharp.</p>
+     </div>
+     <a class="btn btn-ghost" style="padding:10px 20px;font-size:13px;" href="https://leetcode.com/u/umarakhtar222/" target="_blank" rel="noopener">My LeetCode ↗</a>
+    </div>
+   </div>
+  </div>
+ </section>
+
+ <!-- ================= CONTACT ================= -->
+ <section class="contact-section" id="contact">
+  <div class="shell">
+   <span class="eyebrow">Let's build something useful</span>
+   <h2 class="sec-title">Have an idea worth <span class="grad-text">building?</span></h2>
+   <a class="big-mail" href="mailto:akhtarumar11223@gmail.com">akhtarumar11223@gmail.com</a>
+   <p>For project inquiries, collaboration or just to say hello — I reply within 24 hours.</p>
+   <div class="hero-cta" style="justify-content:center;">
+    <a class="btn btn-primary" href="https://www.linkedin.com/in/umar-akhtar-designer/" target="_blank" rel="noopener">
+     Connect on LinkedIn
+     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10M7 17 17 7"/></svg>
+    </a>
+    <a class="btn btn-ghost" href="https://wa.me/923136928882" target="_blank" rel="noopener">Chat on WhatsApp</a>
+   </div>
+  </div>
+ </section>
+
+ <!-- ================= FOOTER ================= -->
+ <footer class="footer">
+  <div class="shell footer-inner">
+   <a href="#top" class="brand"><span class="brand-mark">UA<i class="mark-dot d1"></i><i class="mark-dot d2"></i></span> Umar&nbsp;<i class="grad-text" style="font-style:normal;">Akhtar</i></a>
+   <div class="footer-nav">
+    <a href="https://www.linkedin.com/in/umar-akhtar-designer/" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="https://github.com/umar-akhtar-designer" target="_blank" rel="noopener">GitHub</a>
+    <a href="https://leetcode.com/u/umarakhtar222/" target="_blank" rel="noopener">LeetCode</a>
+    <a href="certificates.html">Certificates</a>
+    <a href="assets/Umar_Akhtar_CV.pdf" download>CV</a>
+    <a href="#top">Back to top ↑</a>
+   </div>
+   <p>© 2026 Umar Akhtar · Designed &amp; built with AI</p>
+  </div>
+ </footer>
+
+ <button class="back-top" id="backTop" aria-label="Back to top">↑</button>
+
+ <script src="js/main.js"></script>
+</body>
+</html>
