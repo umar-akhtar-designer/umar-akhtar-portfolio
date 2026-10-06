@@ -2,6 +2,13 @@
    Umar Akhtar — Portfolio JS
    ============================================================ */
 
+/* ---------- Image fade-in on load ---------- */
+document.documentElement.classList.add('js');
+document.querySelectorAll('img').forEach((img) => {
+  if (img.complete) img.classList.add('loaded');
+  else img.addEventListener('load', () => img.classList.add('loaded'));
+});
+
 const nav = document.getElementById('nav');
 const backTop = document.getElementById('backTop');
 const progress = document.getElementById('scrollProgress');

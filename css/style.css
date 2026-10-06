@@ -641,14 +641,19 @@ h2.sec-title {
   width: 100%;
   display: block;
 }
-.browser-vis.dark .project-screenshot {
-  background: #f0f0f0;
-}
 .project-screenshot-wrapper {
   width: 100%;
   overflow: hidden;
   border-radius: 16px 16px 0 0;
   position: relative;
+  background: linear-gradient(135deg, rgba(255,255,255,.65), rgba(163,177,191,.22));
+}
+.js img {
+  opacity: 0;
+  transition: opacity .55s ease;
+}
+.js img.loaded {
+  opacity: 1;
 }
 /* ---------- Graphic gallery (masonry, adapts to image sizes) ---------- */
 .gallery-group { margin-top: clamp(40px, 6vw, 64px); }
